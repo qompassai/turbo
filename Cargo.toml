@@ -1,26 +1,14 @@
-[package]
-name = "{{crate_name}}"
-version = "{{version}}"
-authors = ["{{authors}}"]
-edition = "{{edition}}"
-license = "{{license}}"
-description = "{{description}}"
-default-run = "{{crate_name}}"
-readme = "README.md"
-repository = "https://github.com/qompassai/{{crate_name}}"
-documentation = "https://docs.rs/{{crate_name}}"
-
+# /qompassai/turbo/Cargo.toml
+# Qompass AI Turbo Cargo Config
+# Copyright (C) 2025 Qompass AI, All rights reserved
+# ###################################################
 [workspace]
-members = 
 resolver = "3"
-
-[cache]
-compression-level = 6
+members = ["qinvaders"]
 
 [dependencies]
 
 [dev-dependencies]
-
 # [[bin]]
 # name = "{{crate_name}}"
 # path = "src/main.rs"
@@ -37,4 +25,3 @@ opt-level = 3
 panic = "abort"
 strip = "debuginfo"
 overflow-checks = true
-relocation-model = "pic"

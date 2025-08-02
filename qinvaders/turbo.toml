@@ -1,0 +1,12 @@
+# /qompassai/turbo/qinvaders/turbo.toml
+# Qompass AI Q-Invaders Turbo Config
+# Copyright (C) 2025 Qompass AI, All rights reserved
+#####################################################
+name = "qinvaders"
+version = "0.1.0"
+authors = ["Qompass AI"]
+description = "Defend Earth from waves of space invaders!"
+
+[canvas]
+width = 224
+height = 256

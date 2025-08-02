@@ -1,11 +1,11 @@
-<!-- /qompassai/rtemplate/README.md -->
+<!-- /qompassai/turbo/README.md -->
 <!-- --------------------------------- -->
 <!-- Copyright (C) 2025 Qompass AI, All rights reserved -->
 
-<h2> Qompass AI Rust Repo Template </h2>
+<h2> Qompass AI on Turbo </h2>
 
-![Repository Views](https://komarev.com/ghpvc/?username=qompassai-rtemplate)
-![GitHub all releases](https://img.shields.io/github/downloads/qompassai/rtemplate/total?style=flat-square)
+![Repository Views](https://komarev.com/ghpvc/?username=qompassai-turbo)
+![GitHub all releases](https://img.shields.io/github/downloads/qompassai/turbo/total?style=flat-square)
 
 <p align="center">
   <a href="https://www.rust-lang.org/"><img
@@ -22,66 +22,6 @@
       alt="License: Q-CDA"></a>
 </p>
 
-
-<details>
-  <summary
-    style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #667eea; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;">
-    <strong>🧭 Template Organization </strong>
-  </summary>
-  <blockquote>
-    style="font-size: 1.2em; line-height: 1.8; padding: 25px; background: #f8f9fa; border-left: 6px solid #667eea; border-radius: 8px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-
-```rust
-    rtemplate/
-├── crates/                   # Rust workspace crates (libraries, bins)
-│   ├── app/                  # Main application crate (binary)
-│   │   ├── src/
-│   │   │   └── main.rs       # Main executable entry point
-│   │   ├── Cargo.toml
-│   ├── qompass/              # Example public library crate
-│   │   ├── src/
-│   │   │   └── lib.rs        # Public library API
-│   │   ├── Cargo.toml
-│   └── ...                   # (other lib/bin crates as your workspace grows)
-├── configs/                  # Configuration files (YAML, TOML, etc.)
-├── scripts/                  # Build and automation scripts (sh, bash, etc.)
-├── test/                     # Integration/system test setups, config, and testdata
-├── docs/                     # Documentation files (md, img, etc.)
-├── .github/                  # GitHub Actions, issue templates, etc.
-├── .gitignore                # VCS ignore patterns
-├── Cargo.toml                # Workspace manifest (declares members)
-├── Cargo.lock                # Project lockfile (optional for bins/libs)
-├── Makefile                  # Common build/dev commands
-├── README.md                 # Project documentation
-├── LICENSE-QCDA              # Qompass Commercial Distribution Agreement for Commerical Use
-├── LICENSE-AGPL              # Qompass AGPL-3.0 For Non-Commercial Use
-└── Containerfile             # for Container based builds
-```
-  </blockquote>
-</details>
-
-<details>
-  <summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #667eea; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;">
-    <strong>
-      <img src="https://raw.githubusercontent.com/qompassai/svg/main/assets/icons/rust/ferris.svg"
-           alt="Ferris the Crab"
-           style="height: 1em; vertical-align: -0.2em; margin-right: 0.25em;" />
-      Rust Solutions
-    </strong>
-  </summary>
-  <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 10px; font-family: monospace;">
-
-* [Qompass.AI](https://github.com/qompassai/qai)
-* [Qompass Bunker](https://github.com/qompassai/bunker)
-* [Qompass Hold](https://github.com/qompassai/qompass-hold)
-* [Qompass QXet](https://github.com/qompassai/qxet)
-* [Qompass on Tauri](https://github.com/qompassai/tauri)
-* [Qompass Volta](https://github.com/qompassai/volta)
-* [Qompass Vongola](https://github.com/qompassai/vongola)
-
-  </div>
-
-</details>
 
 <details>
   <summary style="font-size: 1.4em; font-weight: bold; padding: 15px; background: #667eea; color: white; border-radius: 10px; cursor: pointer; margin: 10px 0;">
