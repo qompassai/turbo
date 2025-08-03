@@ -1,9 +1,9 @@
-# /qompassai/rtemplate/flake.nix
-# Qompass AI Rust Template FLake
+# /qompassai/turbo/flake.nix
+# Qompass AI Turbo Template FLake
 # Copyright (C) 2025 Qompass AI, All rights reserved
 ####################################################
 {
-  description = "Qompass AI Rust Template Flake";
+  description = "Qompass AI Turbo Flake";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     fenix.url = "github:nix-community/fenix";
@@ -58,11 +58,7 @@
           ];
 
           shellHook = ''
-            echo "==> Rust multi-toolchain cross-compilation shell ready!"
-            echo "Available Rust toolchains (via fenix):"
-            echo "  - stable, beta, nightly, nightly-2025-02-14, nightly-2025-05-08, 1.68.0, ... 1.86.0"
-            echo "You can use e.g. 'rustc +nightly-2025-05-08 --version'"
-            echo "Cargo tools (cross, zigbuild, cbindgen, wasm-pack, just, sccache, bindgen, cxxbridge-cmd) are available."
+            echo "==> Ready, Set, Turbo"
           '';
         };
       }
