@@ -1,12 +1,12 @@
 {
-  "title": "rtemplate",
-  "description": "Qompass AI Rust template",
+  "title": "turbo",
+  "description": "",
   "license": "Q-CDA-1.0",
   "language": "eng",
   "upload_type": "software",
   "access_right": "open",
-  "version": "2025-07-31-1-g8b4fb42",
-  "publication_date": "2025-08-01",
+  "version": "f9171b8-dirty",
+  "publication_date": "2025-08-03",
   "creators": [
     {
       "name": "Porter, Matthew A.",
@@ -15,12 +15,12 @@
       "type": "Author"
     }
   ],
-  "keywords": ["AI","Education","Healthcare","Post-Quantum Cryptography","Quantum","opensource","software"],
+  "keywords": ["AI","Education","Healthcare","Post-Quantum Cryptography","Quantum","performance","rust","systems programming"],
   "related_identifiers": [
-    { "identifier": "https://github.com/qompassai/rtemplate", "relation": "isSupplementTo", "resource_type": "software" },
-    { "identifier": "https://github.com/qompassai/rtemplate/releases/tag/v2025-08-01", "relation": "isIdenticalTo", "resource_type": "software" },
+    { "identifier": "https://github.com/qompassai/turbo", "relation": "isSupplementTo", "resource_type": "software" },
+    { "identifier": "https://github.com/qompassai/turbo/releases/tag/v2025-08-03", "relation": "isIdenticalTo", "resource_type": "software" },
     { "identifier": "https://orcid.org/0000-0002-0302-4812", "relation": "isAuthorOf", "resource_type": "person" },
-    { "identifier": "https://github.com/qompassai/rtemplate/actions", "relation": "isCompiledBy", "resource_type": "workflow" },
+    { "identifier": "https://github.com/qompassai/turbo/actions", "relation": "isCompiledBy", "resource_type": "workflow" },
     { "identifier": "https://loop.frontiersin.org/people/2230223", "relation": "isAuthorOf", "resource_type": "person" },
     { "identifier": "https://www.webofscience.com/wos/author/HNQ-0292-2023", "relation": "isIdenticalTo", "resource_type": "person" },
     { "identifier": "https://www.scopus.com/authid/detail.uri?authorId=57385910700", "relation": "isIdenticalTo", "resource_type": "person" }
