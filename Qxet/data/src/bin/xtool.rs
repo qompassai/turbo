@@ -103,6 +103,7 @@ impl Command {
             Command::Dedup(arg) => {
                 let file_paths = walk_files(arg.files, arg.recursive);
                 eprintln!("Dedupping {} files...", file_paths.len());
+
                 let (all_file_info, clean_ret, total_bytes_trans) = migrate_files_impl(
                     file_paths,
                     arg.sequential,
@@ -113,6 +114,7 @@ impl Command {
                     !arg.migrate,
                 )
                 .await?;
+
                 // Print file info for analysis
                 if !arg.migrate {
                     let mut writer: Box<dyn Write> = if let Some(path) = arg.output {
@@ -123,17 +125,21 @@ impl Command {
                     serde_json::to_writer(&mut writer, &all_file_info)?;
                     writer.flush()?;
                 }
+
                 eprintln!("\n\nClean results:");
                 for (pf, new_bytes) in clean_ret {
                     println!("{}: {} bytes -> {} bytes", pf.hash_string(), pf.filesize(), new_bytes);
                 }
+
                 eprintln!("Transmitted {total_bytes_trans} bytes in total.");
+
                 Ok(())
             },
             Command::Query(_arg) => unimplemented!(),
         }
     }
 }
+
 fn walk_files(files: Vec<String>, recursive: bool) -> Vec<String> {
     // Scan all files if under recursive mode
     let file_paths = if recursive {
@@ -159,13 +165,16 @@ fn walk_files(files: Vec<String>, recursive: bool) -> Vec<String> {
 
     file_paths
 }
+
 fn is_git_special_files(path: &str) -> bool {
     matches!(path, ".git" | ".gitignore" | ".gitattributes")
 }
+
 fn main() -> Result<()> {
     let cli = XCommand::parse();
     let threadpool = Arc::new(ThreadPool::new_with_hardware_parallelism_limit()?);
     let threadpool_internal = threadpool.clone();
     threadpool.external_run_async_task(async move { cli.run(threadpool_internal).await })??;
+
     Ok(())
 }
